@@ -1,0 +1,771 @@
+@import url("https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Andika New Basic", sans-serif;
+}
+
+.mainSection {
+  height: 100vh;
+}
+
+.mainSection {
+  display: grid;
+  place-items: center;
+  background: #dde1e7;
+  text-align: center;
+}
+
+.icon1 {
+  position: relative;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 150px;
+  background: #dde1e7;
+  box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+  margin-bottom: 10px;
+}
+
+.icon1 span i {
+  text-align: center;
+  font-size: 20px;
+  padding: 10px 0px 0px 0px;
+  color: red;
+}
+
+.content {
+  width: 330px;
+  padding: 40px 30px;
+  background: #dde1e7;
+  border-radius: 10px;
+  box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+
+.content .text {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 35px;
+  color: #595959;
+}
+
+.field {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.field:nth-child(2) {
+  margin-top: 20px;
+}
+
+.field input {
+  height: 100%;
+  width: 100%;
+  padding-left: 45px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  background: #dde1e7;
+  color: #595959;
+  border-radius: 25px;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff73;
+}
+
+.field input:focus {
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #ffffff73;
+}
+
+.field span {
+  position: absolute;
+  color: #595959;
+  width: 50px;
+  line-height: 50px;
+}
+
+.field label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 45px;
+  pointer-events: none;
+  color: #666666;
+}
+
+.field input:valid ~ label {
+  opacity: 0;
+}
+
+button {
+  margin: 25px 0px 15px 0px;
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  line-height: 50px;
+  font-weight: 600;
+  background: #dde1e7;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #595959;
+  box-shadow: 2px 2px 5px #babecc, -5px -5px 10px #ffffff73;
+}
+
+button a {
+  text-decoration: none;
+}
+
+button:focus {
+  color: #3498db;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff73;
+}
+
+.sign-up {
+  margin: 10px 0;
+  color: #595959;
+  font-size: 16px;
+}
+
+.sign-up a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.sign-up a:hover {
+  text-decoration: underline;
+}
+
+/* --------------index page css end ------------ */
+
+/* -----My Card Section Page Css start now ------*/
+
+.myCardSection {
+  background: #dde1e7;
+  height: 100vh;
+}
+
+.headerSection {
+  background: #d0d4da;
+  border-radius: 0px;
+  box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+
+.logo {
+  padding: 5px 10px 0px 10px;
+}
+
+.logOut {
+  float: right;
+  color: red;
+  font-size: 20px;
+  padding: 5px 20px 0px 20px;
+  cursor: pointer;
+}
+
+.CardDive {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #dde1e7;
+  position: relative;
+}
+
+.CardDive .mycard {
+  width: 150px;
+  height: auto;
+  background: #dde1e7;
+  border: solid 1px red;
+  border-radius: 20px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  text-align: center;
+  top: -22px;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+  color: #122e60;
+  padding: 0px 10px 0px 10px;
+}
+
+.clientDetails {
+  position: relative;
+  width: 530px;
+  margin: 60px 0px;
+  padding: 40px 30px;
+  background: #dde1e7;
+  border-radius: 10px;
+  box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+
+.userProfile {
+  position: relative;
+}
+
+.userProfile img {
+  width: 150px;
+  height: auto;
+  position: relative;
+}
+
+.companyName {
+  position: absolute;
+  left: 200px;
+  top: 40px;
+}
+
+.companyName h1 {
+  font-size: 20px;
+  letter-spacing: 0.2px;
+  font-weight: 600;
+  color: #153060;
+}
+
+.Details {
+  position: relative;
+  padding: 30px 10px;
+}
+
+.Details::before {
+  position: absolute;
+  content: "";
+  bottom: 35px;
+  left: 15px;
+  width: 3px;
+  height: 140px;
+  background-color: #fece3c;
+}
+
+.Details p i {
+  font-size: 18px;
+  text-align: left;
+  color: #153060;
+  padding: 10px 20px 10px 30px;
+}
+
+.buttonGroup {
+  margin: 20px 0px;
+}
+
+.buttonGroup ul li {
+  list-style: none;
+  text-decoration: none;
+  display: inline;
+}
+
+.buttonGroup ul li a {
+  font-size: 18px;
+  letter-spacing: 0.2px;
+  margin: 0px 20px 20px 0px;
+  text-align: center;
+  background: #dde1e7;
+  border-radius: 0px;
+  box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+  padding: 5px 16px;
+  color: #000;
+  text-decoration: none;
+}
+
+/* ------My Card Section Page Css end now -------*/
+
+/* ------Edit page Css start now-------- */
+.EditSection .mainSection {
+  background: #dde1e7;
+  height: 92vh;
+}
+
+.Back {
+  position: relative;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  width: 150px;
+  height: 40px;
+  border-radius: 150px;
+  background: #dde1e7;
+  box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+  margin-bottom: 28px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.Back a {
+  text-decoration: none;
+}
+
+.Back span i {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 10px 0px 0px 0px;
+  color: red;
+}
+
+/* Animate form like google form css start */
+.g-input-container {
+  width: 100%;
+  height: 35px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  position: relative;
+  margin: 10px 0;
+}
+
+.g-input-container input {
+  width: calc(100% - 3px);
+  height: calc(100% - 3px);
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  padding-left: 5px;
+  background: transparent;
+  display: block;
+  z-index: 2;
+  position: absolute;
+}
+
+.g-input-container label {
+  position: absolute;
+  top: 50%;
+  display: block;
+  transform: translateY(-50%);
+  cursor: text;
+  color: gray;
+  font-family: sans-serif;
+  font-size: 15px;
+  margin-left: 10px;
+  transition: all 0.1s ease-in;
+  z-index: 1;
+}
+
+.g-input-container.active {
+  border: 1.5px solid blue;
+}
+
+.g-input-container.active input {
+  padding-left: 10px;
+}
+
+.g-input-container.active label {
+  top: 0;
+  font-size: 12px;
+  background: #dde1e6;
+  padding: 0 5px;
+  color: #153060;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+/* ------End animate */
+
+/* ----choose card section css start now  */
+#selectCard {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+}
+
+#selectCard .heading {
+  text-align: center;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#selectCard .heading::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 200px;
+  height: 1px;
+  bottom: 5px;
+  background-color: red;
+}
+
+#selectCard .heading span a {
+  text-decoration: none;
+}
+
+#selectCard .headingTitle {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 0px 10px;
+}
+
+#selectCard .card {
+  width: 100%;
+  height: 400px;
+  background: #153060;
+  border-radius: 0px;
+  border: solid 2px red;
+  margin-bottom: 12px;
+}
+
+#selectCard .card .image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#selectCard .card .image img {
+  width: 100%;
+  transition: 0.5s;
+}
+
+#selectCard .card:hover .image img {
+  opacity: 0.5;
+  transform: translateX(30%);
+}
+
+#selectCard .card .details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  background: #0a2759;
+  transition: 0.5s;
+  transform-origin: left;
+  transform: perspective(2000px) rotateY(-90deg);
+}
+
+#selectCard .card:hover .details {
+  transform: perspective(2000px) rotateY(0deg);
+}
+
+#selectCard .card .details .center {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#selectCard .card .details .center h1 {
+  margin: 0;
+  padding: 0;
+  color: #ff3636;
+  line-height: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+#selectCard .card .details .center h1 span {
+  font-size: 14px;
+  color: #262626;
+}
+
+#selectCard .card .details .center p {
+  margin: 10px 0;
+  padding: 0;
+  color: #262626;
+}
+
+#selectCard .card .details .center ul {
+  margin: 10px auto 0;
+  padding: 0;
+  display: table;
+}
+
+#selectCard .card .details .center ul li {
+  list-style: none;
+  margin: 0 5px;
+  float: left;
+}
+
+#selectCard .card .details .center ul li a {
+  display: block;
+  background: #153060;
+  color: #fff;
+  width: auto;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  transform: 0.5s;
+  text-decoration: none;
+  padding: 0px 10px;
+}
+
+#selectCard .card .details .center ul li a:hover {
+  background: #ff3636;
+}
+
+#bottomSection {
+  width: 100%;
+  height: auto;
+  background-color: #d0d4d9;
+  margin-bottom: 0px;
+  padding: 15px 0px;
+}
+
+#bottomSection .save {
+  text-align: right;
+}
+
+#bottomSection a {
+  text-decoration: none;
+  color: #0d6efd;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+}
+
+#bottomSection a:hover {
+  background-color: #808080;
+  letter-spacing: 0.5px;
+  padding: 5px;
+  transition: 0.5s;
+  border-radius: 4px;
+  color: #fff;
+}
+
+/* ============Basic Details form css start now========== */
+#BdetailsForm {
+  width: 100%;
+  height: auto;
+  background-color: #dde1e7;
+  padding: 20px 0px 50px 0px;
+}
+
+#BdetailsForm {
+  width: 100%;
+  height: 100%;
+  margin-top: 0px;
+}
+
+#BdetailsForm .heading {
+  text-align: center;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  position: relative;
+  background-color: #dde1e7;
+}
+
+#BdetailsForm .headingTitle {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 0px 10px;
+  background-color: #dde1e7;
+}
+
+#BdetailsForm .headingTitle {
+  color: #18191a;
+  text-shadow: -8px -8px 12px rgba(255, 255, 255, 0.4),
+    8px 8px 12px rgba(0, 0, 0, 0.08);
+  caret-color: #262626;
+  outline: none;
+}
+
+#BdetailsForm .formArea {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 60px 50px;
+  background: #dde1e7;
+  border-radius: 10px;
+  box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+
+.name-heading h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #153060;
+  padding: 1px 0px 22px 0px;
+  position: relative;
+}
+
+.name-heading h3::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background-color: #000;
+  left: 0px;
+  bottom: 15px;
+}
+
+.other-heading h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #153060;
+  padding: 1px 0px 15px 0px;
+  position: relative;
+}
+
+.other-heading h3::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background-color: #000;
+  left: 0px;
+  bottom: 10px;
+}
+
+#BdetailsForm .g-input-container {
+  margin: 20px 0;
+  height: 40px;
+}
+
+#BdetailsForm .address {
+  height: 80px;
+}
+
+/* ===============Setting page Css start now============= */
+.checkBox {
+  width: 100%;
+  height: auto;
+}
+
+.checkBox input[type="checkbox"] + label {
+  display: block;
+  margin: 1.2em;
+  cursor: pointer;
+  padding: 0.2em;
+  font-size: 17px;
+}
+
+.checkBox input[type="checkbox"] {
+  display: none;
+}
+
+.checkBox input[type="checkbox"] + label:before {
+  content: "\2714";
+  border: 0.1em solid #153060;
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 1em;
+  height: 1.5em;
+  padding-left: 0em;
+  padding-bottom: 0em;
+  margin-right: 0.4em;
+  vertical-align: bottom;
+  color: transparent;
+  transition: 0.2s;
+  font-size: 20px;
+}
+
+.checkBox input[type="checkbox"] + label:active:before {
+  transform: scale(0);
+}
+
+.checkBox input[type="checkbox"]:checked + label:before {
+  background-color: MediumSeaGreen;
+  border-color: MediumSeaGreen;
+  color: #fff;
+}
+
+.checkBox input[type="checkbox"]:disabled + label:before {
+  transform: scale(1);
+  border-color: #aaa;
+}
+
+.checkBox input[type="checkbox"]:checked:disabled + label:before {
+  transform: scale(1);
+  background-color: #bfb;
+  border-color: #bfb;
+}
+
+/* ======Thank you page css start now====== */
+.thanyou {
+  width: auto;
+  padding: 40px 30px;
+  background: #dde1e7;
+  border-radius: 10px;
+  box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+.thanyou .icon1 span i {
+  text-align: center;
+  font-size: 20px;
+  padding: 10px 0px 0px 0px;
+  color: green;
+}
+.thanyou .field input {
+  font-size: 16px;
+}
+.thanyou button {
+  margin: 0px 0px 15px 0px;
+}
+.thanyou .text {
+  margin-bottom: 15px;
+}
+.pmcare img {
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+}
+
+/* ======================For Mobile Responsive css start Now=================== */
+@media only screen and (max-width: 600px) {
+  .clientDetails {
+    position: relative;
+    width: 348px;
+    margin: 56px 0px;
+    padding: 40px 10px;
+  }
+  .userProfile img {
+    width: 120px;
+  }
+  .companyName {
+    position: absolute;
+    left: 140px;
+    top: 40px;
+  }
+  .companyName h1 {
+    font-size: 14px;
+  }
+
+  .buttonGroup {
+    margin: 20px 20px;
+  }
+  .buttonGroup ul li {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    height: 11px;
+  }
+  .buttonGroup ul li a {
+    font-size: 14px;
+    width: 60px;
+    height: 50px;
+  }
+
+  #bottomSection a {
+    font-size: 14px;
+  }
+
+  #bottomSection a:hover {
+    letter-spacing: -0.8px;
+  }
+  #selectCard .headingTitle {
+    font-size: 18px;
+  }
+  #BdetailsForm .formArea {
+    padding: 30px 14px;
+  }
+  .checkBox input[type="checkbox"] + label {
+    font-size: 14px;
+  }
+  .btn-primary {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
